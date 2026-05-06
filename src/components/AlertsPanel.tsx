@@ -1,0 +1,1 @@
+export default function AlertsPanel({ alerts }: { alerts: string[] }) {return <div className="lobster-panel p-3"><h3 className="mb-2">Alerts</h3><div className="space-y-2">{alerts.map(a=><div key={a} className="danger-alert rounded px-2 py-1">{a}</div>)}</div><div className="mt-3 h-10 rounded border border-dashed border-amber-400">alert popup placeholder</div></div>}

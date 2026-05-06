@@ -1,0 +1,2 @@
+const items = ['Overview','Tasks','Agents','Workers','Analytics','Loops','Alerts','Memory','Network','Tokens','Settings']
+export default function Sidebar(){return <aside className="lobster-frame w-full md:w-60 p-4"><div className="mb-4 h-10 rounded lobster-glow">top dashboard frame</div><ul className="space-y-2">{items.map(i=><li key={i} className="ocean-card rounded px-3 py-2 flex justify-between"><span>{i}</span><span className="h-4 w-4 rounded bg-teal-300/30"> </span></li>)}</ul></aside>}
