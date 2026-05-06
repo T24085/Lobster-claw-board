@@ -1,0 +1,2 @@
+import StatusBadge from './StatusBadge'
+export default function AgentCard({ agent }: { agent: any }) {return <article className="lobster-panel p-3"><div className="flex justify-between"><h4>{agent.name}</h4><StatusBadge status={agent.status} /></div><p className="text-xs">{agent.role} • {agent.model}</p><p className="text-xs">Task: {agent.activeTask}</p><p className="text-xs">Tokens: {agent.tokens} • Uptime: {agent.uptime}</p><p className="text-xs">Health: {agent.health}% • Last: {agent.lastAction}</p></article>}

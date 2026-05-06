@@ -1,0 +1,1 @@
+export default function ActivityFeed({ logs }: { logs: string[] }) {return <div className="lobster-panel h-48 overflow-auto p-3 space-y-2">{logs.map((l,i)=><div key={`${l}-${i}`} className="ocean-card rounded px-2 py-1">{l}</div>)}</div>}
